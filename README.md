@@ -3,9 +3,8 @@
 # Lab 5: *Versão 2 da SPA com layout responsivo baseado em Flexbox e Grid* 
 
 ## Objetivos
-* Criar uma única página HTML, ao estilo das *Single Page Applications* (SPA). Ou seja, tudo ficará numa única página, explorando com scroll down (veja este exemplo https://www.kiwi.com/pt/).
-* Aplicará os conceitos aprendidos de propriedades CSS, em especial flexbox e grid, assim como responsividade com media queries
-* Aplicará igualmente conceitos de web design, layout, hero page, assim como efeitos e transições. 
+* NEste laboratório irá melhorar a sua *Single Page Application* (SPA) realizada no Lab 4. 
+* Aplicará conceitos de web design, layout, hero page, assim como diversos efeitos com CSS. 
 * explorará os slides da aula para se familiarizar com a matéria e a assimilar para o mini-teste (todos os conceitos abordados neste lab sairão)
 
 ## Recomendações
@@ -60,19 +59,37 @@ pw-labs-nomeapelido-numero
 
 # 1. Hero image
 
-Crie uma *hero image* da sua página que ocupe grande parte do ecrã da sua página, aplicando os conceitos aprendidos (veja [slides sobre web design, em especial 40-46](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.8-web-design.pdf#page=40)). 
-Os restantes conteúdos aparecerão em seguida, fazendo scroll down. Para tal use um video como background, garantindo que um bome contraste é mantido.
+* Substitua o cabeçalho que fez no lab 4, por uma *hero image* que ocupe grande parte do ecrã da sua página, aplicando os conceitos aprendidos (veja [slides sobre web design, em especial pgs. 40-46](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.8-web-design.pdf#page=40)). 
+* Use um video como background do elemento. Pode usar [iframe responsivo](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf#page=12), garantindo que um bom contraste é mantido.
+* E escolha um texto curto, devidamente posicionado. Revisite o conceitos de [peso visual](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.8-web-design.pdf#page=33) para desenhar a sua hero image.
+* A barra de menu horizontal deverá estar em cima. Os restantes conteúdos aparecerão por baixo, ao fazer scroll down. A barra de menu deverá ficar fixa no ecrã independentemente do scroll.
 
-
-
+ 
 # 1. Parallax
 
+* A página será constituida por diversos elementos div, uns por baixo dos outros. Siga o princípio KISS (Keep It Simple Stupid). Veja alguns sites apresentados nos slides, como da [apple](https://www.apple.com/) 
+* Utilize o efeito parallax entre algumas divisórias div (veja [slides efeitos, pg 11](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf#page=11)).  
+* Crie alguns elementos de texto, por forma a se sentir o efeito parallax.
+* Use elementos de texto àsua escolha. Pode usar texto que tenha usado em labs anteriores.
 
-grid de fotografias unsplash com pelo menos 10 fotos, fazendo uma composição original de fotografias com tamanhos diferentes, devidamente separadas com propriedade <cod>gap</>.  
 
-# 1. Parallax
+# 1. Grid de fotografias
 
-Crie uma animação 
+* Crie um elemento <code>div</code> com fotografias.
+* dentro do elemento, crie quatro elementos. 
+* Cada elemento terá 5 fotografias do Unsplash (veja [slides efeitos, pg 7](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf#page=7)).  
+* Quando passar com o rato por cima duma fotografia, deverá aparecer no canto inferior direito o nome do fotógrafo, com um contraste adequado. Utilise a propriedade [transition](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf#page=19) por forma a que o elemento apareça de forma suave. 
+* Torne o elemento responsivo à largura do viewport:
+    * abaixo de 600px de largura fica com 1 coluna de fotografias
+    * abaixo de 900px de largura fica com 2 colunas de fotografias
+    * acima de 901px fica com 4 colunas.
+* Garanta um separação vertical e horizontal homogénea entre 
+
+
+# 1. Animação
+
+Crie um elemento div com uma grid 2x2, onde em cada area existe uma animação feita por si com [@keyframes](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf#page=20)).  
+
   
 # 1. Menu
 
