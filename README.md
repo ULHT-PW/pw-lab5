@@ -75,7 +75,7 @@ Crie alguns elementos de texto, por forma a se sentir o efeito parallax tal como
 
 # 1. Grelha de fotografias
 
-* Crie um elemento <code><div class="fotos"></code>.
+* Crie um elemento <code>&gtdiv class="fotos"&lt</code>.
 * Este deverá conter 12 <code><div></code> cada um com uma fotografia escolhidas por si a seu gosto do [Unsplash](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf#page=7) e num elemento <code><p></p></code> o nome do autor da foto.  
 * Recorrendo a media queries e a CSS Grid, torne o elemento <code><div class="fotos"></div></code> responsivo à largura do viewport (tal como o próprio site de [Unsplash](https://unsplash.com/)) de forma a que:
     * abaixo de 600px de largura, fica com 1 coluna de fotografias.
