@@ -70,7 +70,7 @@ pw-labs-nomeapelido-numero
 * garanta que ocupa a totalidade do ecrã ([exemplo](https://codepen.io/LucioStuder/pen/LYebZNZ)), colocando dentro de um contentor de altura 100vh a) o menu e b) o elemento hero image. deverá ter display grid por forma a configurar a altura do menu (por exemplo 10%) e do elemento hero (1fr). 
  
 # 2. Parallax
-* Aplique as boas praticas de web design! Siga ideias deste [exemplo](https://codepen.io/LucioStuder/pen/yLpVJpd). 
+* Aplique as boas praticas de web design! Siga ideias deste [exemplo](https://codepen.io/LucioStuder/pen/XWVKzpK). 
 * Deverá incluir nesta página novos elementos div, uns por baixo dos outros, ao estilo das SPAs de design simples (KISS). inspire-se em  sites apresentados nos slides (e.g., da [apple](https://www.apple.com/), [kiwi](kiwi.com), [surfrider](https://www.surfrider.org/)).
 * Utilize o efeito parallax para criar efeitos entre algumas divisórias div (veja [slide sobre parallax](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf#page=11)). 
 * Crie alguns elementos de texto, por forma a se sentir o efeito parallax tal como no exemplo anterior. Use elementos de texto à sua escolha. Pode usar texto que tenha usado em labs anteriores.
