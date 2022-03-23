@@ -1,15 +1,16 @@
 **PROGRAMAÇÃO WEB - aplicações web por perfeccionistas criativos**
  
-# Lab 5: *Versão 2 da SPA com layout responsivo baseado em Flexbox e Grid* 
+# Lab 5: *SPA com boas práticas de web design* 
 
 ## Objetivos
 * Neste laboratório irá incluir novos elementos na *Single Page Application* (SPA) realizada no Lab 4. 
 * Aplicará conhecimentos de web design, layout, hero page, assim como diversos efeitos com CSS. 
-* explorará os slides da aula para se familiarizar com a matéria e a assimilar para o mini-teste (todos os conceitos abordados neste lab sairão)
+* explorará os slides da aula para se familiarizar com a matéria e a assimilar para o mini-teste (todos os conceitos abordados neste lab sairão).
 
 ## Recomendações
 * Leia o enunciado todo com atenção antes de o começar a resolver para entender o que fará.
-* Execute com atenção cada passo, certificando-se que implementa todos os detalhes. 
+* Execute com atenção cada passo, certificando-se que implementa todos os detalhes.
+* Aplique as boas praticas de web design! 
 * Se tiver alguma dúvida, recorra aos slides da aula que contêm todos os conhecimentos que precisa para realizar o laboratório.
 * Este laboratório deverá ser concluido antes da sua aula prática da semana de 28.3, onde será avaliado. 
 * Todos estes conteúdos são conteúdos que saem na frequencia, pelo que exercite-os no laboratório para os conhecer.
@@ -59,160 +60,49 @@ pw-labs-nomeapelido-numero
 
 
 # 1. Hero image
-
-* Substitua o cabeçalho que fez no lab 4 por uma *hero image* que ocupe grande parte do ecrã da sua página, aplicando os conceitos aprendidos (veja [slides sobre web design, em especial pgs. 40-46](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.8-web-design.pdf#page=40)).  
-* Use um video como background do elemento. Pode usar um [iframe responsivo](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf#page=12), garantindo que mantém um bom contraste.
-* Escolha um texto curto que fique devidamente sobreposto sobre o video. Revisite o conceitos de [peso visual](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.8-web-design.pdf#page=33) para desenhar a sua hero image.
-* A barra de menu horizontal deverá estar em cima. Os restantes conteúdos estarão por baixo, ao fazer *scroll down*. A barra de menu deverá ficar fixa no ecrã, independentemente do scroll.
-
+* Aplique as boas praticas de web design!
+* Analise e entenda em profundidade este [exemplo simples](https://codepen.io/LucioStuder/pen/popNbpm) assim como este [exemplo mais refinado](https://codepen.io/LucioStuder/pen/yLpVJpd). Sintetiza o tipo de estrutura e funcionamento com scroll da SPA que irá desenvolver. Todos os conceitos incluídos deverá saber para o mini-teste!
+* Substitua o cabeçalho que fez no lab 4 por uma *hero image* que ocupe a pagina 90vh de altura, como este [exemplo](https://codepen.io/LucioStuder/pen/yLpVJpd). A imagem deve ser em torno do tema da página. Aplique os conceitos aprendidos (veja [slides sobre web design, em especial pgs. 40-46](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.8-web-design.pdf#page=40)).  
+* Use uma fotografia ou um video como background. PAra uma imagem pode usar uma background-image. Para um video pode usar um [iframe responsivo](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf#page=12).
+* Escolha um texto curto que fique devidamente sobreposto sobre a fotografia / video (garanta um bom contraste). 
+* Revisite o conceitos de [peso visual](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.8-web-design.pdf#page=33) para desenhar a sua hero image.
+* A barra de menu horizontal deverá estar em cima. Os restantes conteúdos estarão por baixo, e aparecerão ao fazer *scroll down*. A barra de menu deverá ficar sempre fixa no ecrã, independentemente do scroll.
+* garanta que ocupa a totalidade do ecrã ([exemplo](https://codepen.io/LucioStuder/pen/LYebZNZ)), colocando dentro de um contentor de altura 100vh a) o menu e b) o elemento hero image. deverá ter display grid por forma a configurar a altura do menu (por exemplo 10%) e do elemento hero (1fr). 
  
-# 1. Parallax
-
-* A página será constituida por diversos elementos div, uns por baixo dos outros. Siga o princípio KISS (Keep It Simple Stupid). Veja alguns sites apresentados nos slides (e.g., da [apple](https://www.apple.com/)).
+# 2. Parallax
+* Aplique as boas praticas de web design! Siga ideias deste [exemplo](https://codepen.io/LucioStuder/pen/yLpVJpd). 
+* Deverá incluir nesta página novos elementos div, uns por baixo dos outros, ao estilo das SPAs de design simples (KISS). inspire-se em  sites apresentados nos slides (e.g., da [apple](https://www.apple.com/), [kiwi](kiwi.com), [surfrider](https://www.surfrider.org/)).
 * Utilize o efeito parallax para criar efeitos entre algumas divisórias div (veja [slide sobre parallax](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf#page=11)). 
-Crie alguns elementos de texto, por forma a se sentir o efeito parallax tal como no exemplo anterior. Use elementos de texto à sua escolha. Pode usar texto que tenha usado em labs anteriores.
+* Crie alguns elementos de texto, por forma a se sentir o efeito parallax tal como no exemplo anterior. Use elementos de texto à sua escolha. Pode usar texto que tenha usado em labs anteriores.
 
 
-# 1. Grelha de fotografias
+# 3. Grelha de fotografias
 
-* Crie um elemento <code>&gt;div class="fotos"&lt;</code>.
-* Este deverá conter 12 <code><div></code> cada um com uma fotografia escolhidas por si a seu gosto do [Unsplash](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf#page=7) e num elemento <code><p></p></code> o nome do autor da foto.  
+* Crie um elemento <code>&lt;div class="fotos"&gt;</code>.
+* Este deverá conter 12 <code>&lt;div"&gt;</code> cada um com um elemento <code>&lt;img&gt;</code> fotografia escolhida por si a seu gosto do [Unsplash](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf#page=7) e um elemento <code>&lt;p&gt;</code> com o nome do autor da foto.  
 * Recorrendo a media queries e a CSS Grid, torne o elemento <code><div class="fotos"></div></code> responsivo à largura do viewport (tal como o próprio site de [Unsplash](https://unsplash.com/)) de forma a que:
     * abaixo de 600px de largura, fica com 1 coluna de fotografias.
     * abaixo de 900px de largura fica com 2 colunas de fotografias.
     * acima de 901px fica com 3 colunas.
 * Garanta um separação vertical e horizontal homogénea entre fotografias.
 * configure o elemento <code><div class="fotos"></code> com margens laterais de forma a que não encoste à beira da da *viewport* <code>margin: 0 10vw</code>.
-* Crie um efeito de transição sobre cada fotografia, em que quando passar com o rato por cima duma fotografia, aparece no canto inferior direito o nome do fotógrafo, com um contraste adequado. Utilize a propriedade [transition](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf#page=19) por forma a que o elemento apareça de forma suave. 
-* Sobre algumas fotografias inclua, no seletor do <code>hover</code>, [transformações](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf#page=17) tais como pequenas rotações ou distorções da imagem.
+* Crie um efeito de transição sobre cada fotografia, em que quando passar com o rato por cima duma fotografia, aparece no canto inferior esquerdo o nome do fotógrafo com o fundo branco e cantos arredondados (como no Unsplash). Utilize a propriedade [transition](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf#page=19) por forma a que o nome apareça de forma suave. 
+* pode se quiser também oscurecer a imagem quando passa com o rato por cima  ([exemplo](https://codepen.io/LucioStuder/pen/dyJOGQw)). Para tal, no elemento hover deverá tornar a imagem 50% transparente com <code>opacity: 0.5</code> e o fundo do div que a contém ser preto <code>background-color: black</code>. 
+* Sobre algumas fotografias inclua, no seletor do <code>hover</code>, [transformações](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf#page=17) tais como pequenas rotações ou distorções da imagem  ([exemplo simples](https://codepen.io/LucioStuder/pen/rNpWeav) e outro [exemplo refinado](https://codepen.io/LucioStuder/pen/dyJOGQw)).
 
-# 1. Animação
+# 4. Animação
 
-* Crie um elemento div com uma grid 2x2, onde em cada area existe uma animação feita por si com [@keyframes](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf#page=20)).  
-* uma delas deverá ser uma frase que roda continuamente
+* Crie um elemento div com uma grid 2x2, onde em cada area existe uma animação feita por si com [@keyframes](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf#page=20)). Eis um [exemplo](https://codepen.io/LucioStuder/pen/oNpYxBr).
 
-  
-# 1. Menu
-
-Crie um menu dropdown aplicando o conceito de ...
-  
-  
-
-![image](https://user-images.githubusercontent.com/42048382/158489558-8f31368d-e15b-4a32-82c8-683ac6b2b482.png)
-
-Usando CSS flexbox (propriedade <code>display: flex</code>) crie um elemento flex que replique o layout acima. Para tal:
-* crie uma pasta images para a qual extraia as imagens de capitais europeias contidas no ficheiro [ZIP](https://github.com/ULHT-PW/pw-lab4-2022/blob/main/capitais.zip) 
-* defina, no elemento <code>head</code> a configuração para que o website tenha uma boa responsividade (veja [slide 9](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.7-design-responsivo.pdf#page=9))
-* escolha uma Google font que goste, inclua o link para esta e utilize-a em todo o website, definindo um seletor universal <code>*</code> e propriedade <code>font-family</code> (veja [slide](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.5-propriedades-css.pdf#page=10))
-* Crie um titulo <code>h1</code> "Capitais europeias".
-* A seguir, crie um *container* flex (elemento <code>div</code> com classe *capitais*, estilizado com a propriedade <code>display: flex</code>)) com um conjunto de items (veja [slide 6](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.6-propriedades-css-flex-grid.pdf#page=6))
-* configure o container por forma a ter como cor de fundo azul muito clarinho  (veja o [slide 26](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.5-propriedades-css.pdf#page=26))
-* os items serão um conjunto de elementos <code>div</code>, cada um será alusivo a uma capital europeia tal como se descreve a seguir.
-* cada item <code>div</code> deverá conter dois elementos <code>div</code>, um com a imagem, e outro com um parágrafo com o nome da capital. 
-* configure os div dentro do container (com a composição de selectors <code>.container div</code>) por forma a terem uma borda e cantos arredondados (ver [slide](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.5-propriedades-css.pdf))
-* dentro de cada <code>div</code> coloque a imagem do lado esquerdo e do lado direito oum parágrafo com o nome da cidade. para tal, configure ambos com a propriedade <code>display: inline-block</code>
-* explore as propriedades <code>flex-flow</code> e <code>justify-content</code> e <code>align-items</code> para configurar adequadamente as imagens. Garanta espaçamento entre estas, usando a propriedade <code>margin</code>. 
-* Exemplo de implementação. Deverá entender em detalhe tudo o que é feito em cada selector (são conceitos que saem na frequência)
-
-![image](https://user-images.githubusercontent.com/42048382/158496390-ad99c24c-dfe8-4030-b662-244a9eaec457.png)
-
-# 2. Cabeçalho
-Observe o cabeçalho em baixo do site [kiwi.com](https://www.kiwi.com/pt)).
-
-![image](https://user-images.githubusercontent.com/42048382/158499100-5112973f-dc63-4ca6-a32c-8cd163a46b9f.png)
-
-Crie um cabeçalho semelhante usando flexbox. Para tal:
-* Crie no topo um contentor flexbox classe "menu" para colocar o menu:
-   * do lado esquerdo terá links (âncoras) para os tópicos desta página: *cidades europeias*, *dicas para viajar* e *destinos de sonho*. do lado direito terá um link para os labs de Programação Web (ver [slide 10](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.6-propriedades-css-flex-grid.pdf#page=10)). PAra criar este efeito:
-       * coloque os links dentro de um container com a propriedade <code>display: flex</code>
-       * configure o ultimo link, que pode identificar como <code>.menu a:last-child</code>, com a propriedade <code>margin-left:auto</code>. Isso irá encostar o último elemento à direita do container (para mais detalhes [1](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Alignment/Box_Alignment_in_Flexbox#alignment_and_auto_margins))  
-       * estilize o seletor <code>a</code> com as seguintes propriedades:
-           * <code>padding: 20px</code> para que haja espaço à volta de cada palavra
-           * remova a formatação de hiperlink do texto (sublinhado azul), com <code>text-decoration: none</code>.
-           * defina uma cor à fonte
-       * estilize o que acontece quando passa por cima do menu. PAra tal, deverá definir o selector <code>a:hover</code> com as seguintes propriedades:
-           * associe uma cor de fundo, cinza claro, quando passa por cima do link com o rato
-           * ponha o texto em bold, com  <code>font-weight: bold</code>
-* Crie por baixo outro elemento que terá o cabeçalho, elemento flex que incluirá:
-   * imagem de fundo definida como <code>background-image</code> desse <code>div</code> (veja o [slide 26](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.5-propriedades-css.pdf#page=26))
-   * título da página, dentro de um <code>div</code>, e centrado usando flexbox, seguindo o princípio do [slide](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.6-propriedades-css-flex-grid.pdf#page=9) 
-
-
-# 3. Dicas para viajantes
-
-Crie um novo elemento, por baixo das cidades europeias, com dicas para viajantes. Veja um exemplo em baixo.
-
-![image](https://user-images.githubusercontent.com/42048382/158695221-1b8a65b3-102c-4f6f-9e8a-e73f820050f7.png)
-
-Ficará tudo na mesma página. Para tal:
-* compile 8 dicas para viajantes (invente, pesquise na internet, ou veja por exemplo em [1](https://catracalivre.com.br/rede/10-conselhos-para-quem-quer-viajar-o-mundo/),  [2](https://billete996.aireuropa.com/pt-pt/10-dicas-fantasticas-para-viajar-sozinho/), [3](https://foradazonadeconforto.com/10-dicas-para-viajar-com-os-amigos/), [4](https://www.worldpackers.com/pt-BR/articles/como-viajar-com-pouco-dinheiro), [4](https://janelasabertas.com/2015/12/23/conselhos-de-viagem-que-servem-pra-vida/)). Para cada dica deverá ter:
-   * título
-   * descrição curta (2 linhas)
-   * Icone Google, Bootstrap ou Awesome (veja o s[slide](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.5-propriedades-css.pdf#page=11)) 
-* Crie um titulo <code>h1</code> "Dicas para viajantes".
-* Por baixo, crie um *container* flex (elemento <code>div</code> com classe *dicas*, estilizado com a propriedade <code>display: flex</code>)) com um conjunto de items (veja [slide 6](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.6-propriedades-css-flex-grid.pdf#page=6)), semelhante ao exercicio anterior.
-* cada item será um div com a informação das dicas, o título e ícone num h1 e o texto num elemento p. 
-* no css, configure os divs da classe dicas (<code>.dicas div</code>) com:
-    * um tamanho igual para todos (propriedades width e height)
-    * defina uma borda arredondada e uma sombra, semelhante às caixas das cidades.
-    * um <code>padding: 10px 20px</code> para que o texto não fique colado à moldura (border)
-    * cor de fundo o mesmo azul claro que usou no fundo do container anterior.
-
-# 4. Destinos de sonho com CSS Grid responsivo
-Observe o layout em baixo (fonte: [kiwi.com](https://www.kiwi.com/pt))
-
-![Asymmetric-design](https://user-images.githubusercontent.com/42048382/158484887-93d19749-13b2-41e6-8906-f6322a668b47.jpg)
-
-Usando CSS grid (propriedade <code>display: grid</code>) crie, por debaixo do elemento anterior com dicas para viajantes um elemento replicando o layout encima, mas para 6 destinos em Portugal à sua escolha. Sim, ficará tudo na mesma página pois é uma Single Page Application (SPA). Para tal, siga os seguintes passos:
-
-#### Recolha de informação
-* escolha 5 destinos em Portugal, escolhendo uma fotografia para cada um. As fotos deveráo ser redimensionadas para ser 4 quadradas e uma retangular. Escolha também uma foto alusiva a uma forma económica de férias (dormir na praia, campismo selvagem, dormir ao relento, ...).
-
-* para cada destino, defina texto de forma semelhante à imagem acima: 
-    * tipo do destino
-    * nome do destino
-    * frase convidativa
-    * tipo de destino.
-
-#### Configuração dos items da grid
-* Crie um titulo <code>h1</code> "Destinos de sonho".
-* por baixo, utilizando CSS grid, crie um elemento <code>div</code> com uma classe *destinos*, e dentro deste 6 items <code>div</code> (semelhante ao [slide 23](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.6-propriedades-css-flex-grid.pdf#page=23)).
-* o elemento destinos configure-o para que tenha como cor de fundo o mesmo azul claro que usou no fundo do container cidades. Defina tambem um padding para que os elementos não se encostem à borda da página.
-* em cada um dos 6 items <code>div</code> defina uma classe com nome específico do destino. No CSS, para cada classe:
-   * defina como <code>background-image</code> a foto da do destino (veja o [slide 26](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.5-propriedades-css.pdf#page=26))
-   *  defina uma <code>grid-area</code> com nome da cidade (veja o [slide 23](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.6-propriedades-css-flex-grid.pdf#page=23))
- 
-#### Layout PC 
-* crie uma media query com uma regra min-width = 901px
-* dentro da media query, defina a propriedade <code>grid-template-areas</code>, concebendo o layout dos items semelhante à imagem acima. Garanta algum espaçamento entre estas (propriedade <code>gap</code>).
-
-#### Layout telemóvel
-* crie uma media query com uma regra max-width = 900px
-* dentro da media query, defina a propriedade <code>grid-template-areas</code>, concebendo o layout dos items d forma a que fiquem apenas duas fotos quadradas por linha. Garanta algum espaçamento entre estas (propriedade <code>gap</code>).
-* verifique que a responsividade funciona bem, encolhendo e alargando a página.
-
-#### textos de cada item da foto
-* Use as propriedade <code>position: relative</code> e <code>position: absolute</code> (veja o [slide 35](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.5-propriedades-css.pdf#page=35)) para posicionar cada um dos 3 elementos de texto de cada fotografia como em baixo.
-* escolha um tipo de fonte google giro, bastante grosso e use branco. Garanta que a foto tem contraste permitindo ler o texto.
- 
-![image](https://user-images.githubusercontent.com/42048382/158486562-7b9850dc-1158-46b6-963d-ca79e059940f.png)
-
-* para o item com a sugestão de **"forma económica de férias"** (dormir na praia, campismo selvagem, dormir ao relento, ...) deverá configurar de forma semelhante à imagem inicial, com a foto na parte superior da caixa, existindo por baixo espaço branco para colocar texto (duas frases semelhantes) e um botão. Para tal, crie dentro desse div uma outra grid, com três <code>div</code>: um para a imagem (neste a imagem não fica como background), outro para a frase motivadora, e outro para o botão. 
-* Para o texto (dois parágrafos) e o botão (elemento <code>button</code>, que neste caso não fará nada), cada um no seu div, deverá centrá-los de forma semelhante ao [slide 9](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.6-propriedades-css-flex-grid.pdf#page=9).
-
-
-# 5. Página index dos seus laboratórios
-Estilize a seu gosto sua *landing page* (página de entrada) dos seus laboratórios. Em particular:
-* escolha e utilize uma fonte Google
-* utilize algumas propriedades dos slides (font size, style, wheight, variant, e text-decoration, transform, align, leeter-spacing, word-spacing, line-height e vertical-align)
-* escolha cor de fundo
-* coloque o conteúdo num conjunto de elementos semânticos (header, nav, main, footer) para organizar o conteúdo
-* inclua num elemento aside uma wordcloud e posicione-a de lado (se em layout PC) ou por baixo (se em layout telemovel)
-* crie um layout CSS grid a seu gosto para organizar a informação que deverá ser responsivo à largura do ecrã (veja [slide 12](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.7-design-responsivo.pdf#page=12))
-* utilize 5 ícones Google, Bootstrap ou Awesome (veja o s[slide](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.5-propriedades-css.pdf#page=11)) 
-* Explore as unidades relativas configurar o tamanho das fontes (veja o [slide](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.5-propriedades-css.pdf#page=19))
-* inclua um link para a nova página
- 
+# 5. *Landing page* com *hero image*
+* Aplique as boas praticas de web design! Melhore a landing-page da sua aplicação (index.html com indice dos laboratórios), criando uma [hero page](https://www.hopgoodganim.com.au/) da sua página de entrada da sua aplicação (a que tem a lista dos laboratorios). Siga ideias deste [exemplo](https://codepen.io/LucioStuder/pen/yLpVJpd). 
+* Use uma frase emblemática tipo "Programação Web", e uma pequenina por baixo tipo "web sites e aplicações web dum perfeccionista criativo" e uma fotografia com que se identifique, ou mesmo uma foto sua ou video. Aplique os conceitos que [aprendeu](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.8-web-design.pdf#page=46)
+* Esta página não terá um menu, mas coloque um botão bem visível de chamada de ação (veja exemplo de botão [aqui](https://www.surfrider.org/)) para ver os fantásticos laboratórios que fez nesta cadeira 😀; o elemento terá um link-ancora para o div que se segue, que tem a lista dos labs. 
+* inclua imagem ou video de fundo, animações, transições e efeitos CSS em texto.
+* Torne-a simples mas discretamente animada e com bom web design. Não se esqueça do princípio *Keep It Simple, Smart* 😎 (KISS)!
+* Inspire-se neste [exemplo](https://codepen.io/LucioStuder/pen/yLpVJpd). Por baixo da hero image deverá haver um div com a lista dos laboratórios desenvolvidos.
+* Crie em baixo um outro div a indicar que o projeto está no GitHub e coloque o link. E diga que está hospedado na cloud, no Heroku.
+* Crie um div rodapé com o seu nome, curso e ano em que estamos. Utilize uma fonte mais pequena, em undades relativas (em).
 
 # 6. Submissão
 
@@ -221,7 +111,7 @@ Estilize a seu gosto sua *landing page* (página de entrada) dos seus laboratór
     1.  abra o processador de comandos e posicione-se dentro da pasta do seu repositório (`pw-labs-nomeapelido-numero`).
     2.  escreva as seguintes instruções:
         * `git add *`
-        * `git commit –m "laboratório 4"`
+        * `git commit –m "laboratório 5"`
         * `git push`
              * `git add` serve para propor mudaças, incluindo todos os ficheiros e pastas existentes como. o `commit` serve para confirmar as mudanças e que estas fiquem guardadas. o `push` serve para enviar as alterações (upload) para o repositório no GitHub.
 3. Sincronize o GitHub com o Heroku tal como fez no [lab1](https://github.com/ULHT-PW/pw-lab1). Deverá ir ao Heroku e, em Deploy, fazer deploy branch, de forma a colocar disponível na cloud os novos conteúdos criados. 
@@ -232,4 +122,4 @@ Estilize a seu gosto sua *landing page* (página de entrada) dos seus laboratór
 
  # Fim ☀
  
-Esperamos que tenha gostado de aplicar os conhecimentos para criar layouts com flexbox e CSS grid &#127760;!
+Esperamos que tenha gostado de aplicar os conhecimentos para estilizar a sua SPA &#127760;!
