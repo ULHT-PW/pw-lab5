@@ -3,8 +3,8 @@
 # Lab 5: *Versão 2 da SPA com layout responsivo baseado em Flexbox e Grid* 
 
 ## Objetivos
-* NEste laboratório irá melhorar a sua *Single Page Application* (SPA) realizada no Lab 4. 
-* Aplicará conceitos de web design, layout, hero page, assim como diversos efeitos com CSS. 
+* Neste laboratório irá incluir novos elementos na *Single Page Application* (SPA) realizada no Lab 4. 
+* Aplicará conhecimentos de web design, layout, hero page, assim como diversos efeitos com CSS. 
 * explorará os slides da aula para se familiarizar com a matéria e a assimilar para o mini-teste (todos os conceitos abordados neste lab sairão)
 
 ## Recomendações
@@ -15,6 +15,7 @@
 * Todos estes conteúdos são conteúdos que saem na frequencia, pelo que exercite-os no laboratório para os conhecer.
 
 ## Pré-requisitos
+* Deverá ter concluído o lab4 para fazer este laboratório.
 * Deverá ter o Pycharm instalado para editar o código HTML de forma fácil.
 * Deverá ter instalado o git no seu computador.
 
@@ -59,36 +60,36 @@ pw-labs-nomeapelido-numero
 
 # 1. Hero image
 
-* Substitua o cabeçalho que fez no lab 4, por uma *hero image* que ocupe grande parte do ecrã da sua página, aplicando os conceitos aprendidos (veja [slides sobre web design, em especial pgs. 40-46](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.8-web-design.pdf#page=40)). 
-* Use um video como background do elemento. Pode usar [iframe responsivo](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf#page=12), garantindo que um bom contraste é mantido.
-* E escolha um texto curto, devidamente posicionado. Revisite o conceitos de [peso visual](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.8-web-design.pdf#page=33) para desenhar a sua hero image.
-* A barra de menu horizontal deverá estar em cima. Os restantes conteúdos aparecerão por baixo, ao fazer scroll down. A barra de menu deverá ficar fixa no ecrã independentemente do scroll.
+* Substitua o cabeçalho que fez no lab 4 por uma *hero image* que ocupe grande parte do ecrã da sua página, aplicando os conceitos aprendidos (veja [slides sobre web design, em especial pgs. 40-46](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.8-web-design.pdf#page=40)).  
+* Use um video como background do elemento. Pode usar um [iframe responsivo](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf#page=12), garantindo que mantém um bom contraste.
+* Escolha um texto curto que fique devidamente sobreposto sobre o video. Revisite o conceitos de [peso visual](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.8-web-design.pdf#page=33) para desenhar a sua hero image.
+* A barra de menu horizontal deverá estar em cima. Os restantes conteúdos estarão por baixo, ao fazer *scroll down*. A barra de menu deverá ficar fixa no ecrã, independentemente do scroll.
 
  
 # 1. Parallax
 
-* A página será constituida por diversos elementos div, uns por baixo dos outros. Siga o princípio KISS (Keep It Simple Stupid). Veja alguns sites apresentados nos slides, como da [apple](https://www.apple.com/) 
-* Utilize o efeito parallax entre algumas divisórias div (veja [slides efeitos, pg 11](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf#page=11)).  
-* Crie alguns elementos de texto, por forma a se sentir o efeito parallax.
-* Use elementos de texto àsua escolha. Pode usar texto que tenha usado em labs anteriores.
+* A página será constituida por diversos elementos div, uns por baixo dos outros. Siga o princípio KISS (Keep It Simple Stupid). Veja alguns sites apresentados nos slides (e.g., da [apple](https://www.apple.com/)).
+* Utilize o efeito parallax para criar efeitos entre algumas divisórias div (veja [slide sobre parallax](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf#page=11)). 
+Crie alguns elementos de texto, por forma a se sentir o efeito parallax tal como no exemplo anterior. Use elementos de texto à sua escolha. Pode usar texto que tenha usado em labs anteriores.
 
 
-# 1. Grid de fotografias
+# 1. Grelha de fotografias
 
-* Crie um elemento <code>div</code> com fotografias.
-* dentro do elemento, crie quatro elementos. 
-* Cada elemento terá 5 fotografias do Unsplash (veja [slides efeitos, pg 7](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf#page=7)).  
-* Quando passar com o rato por cima duma fotografia, deverá aparecer no canto inferior direito o nome do fotógrafo, com um contraste adequado. Utilise a propriedade [transition](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf#page=19) por forma a que o elemento apareça de forma suave. 
-* Torne o elemento responsivo à largura do viewport:
-    * abaixo de 600px de largura fica com 1 coluna de fotografias
-    * abaixo de 900px de largura fica com 2 colunas de fotografias
-    * acima de 901px fica com 4 colunas.
-* Garanta um separação vertical e horizontal homogénea entre 
-
+* Crie um elemento <code><div class="fotos"></code>.
+* Este deverá conter 12 <code><div></code> cada um com uma fotografia escolhidas por si a seu gosto do [Unsplash](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf#page=7) e num elemento <code><p></p></code> o nome do autor da foto.  
+* Recorrendo a media queries e a CSS Grid, torne o elemento <code><div class="fotos"></div></code> responsivo à largura do viewport (tal como o próprio site de [Unsplash](https://unsplash.com/)) de forma a que:
+    * abaixo de 600px de largura, fica com 1 coluna de fotografias.
+    * abaixo de 900px de largura fica com 2 colunas de fotografias.
+    * acima de 901px fica com 3 colunas.
+* Garanta um separação vertical e horizontal homogénea entre fotografias.
+* configure o elemento <code><div class="fotos"></code> com margens laterais de forma a que não encoste à beira da da *viewport* <code>margin: 0 10vw</code>.
+* Crie um efeito de transição sobre cada fotografia, em que quando passar com o rato por cima duma fotografia, aparece no canto inferior direito o nome do fotógrafo, com um contraste adequado. Utilize a propriedade [transition](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf#page=19) por forma a que o elemento apareça de forma suave. 
+* Sobre algumas fotografias inclua, no seletor do <code>hover</code>, [transformações](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf#page=17) tais como pequenas rotações ou distorções da imagem.
 
 # 1. Animação
 
-Crie um elemento div com uma grid 2x2, onde em cada area existe uma animação feita por si com [@keyframes](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf#page=20)).  
+* Crie um elemento div com uma grid 2x2, onde em cada area existe uma animação feita por si com [@keyframes](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf#page=20)).  
+* uma delas deverá ser uma frase que roda continuamente
 
   
 # 1. Menu
